@@ -163,8 +163,7 @@ class CommentViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         title = get_object_or_404(Title, pk=self.kwargs.get('title_id'))
         review = get_object_or_404(Review, pk=self.kwargs.get('review_id'))
-        comments = Comment.objects.filter(title=title, review=review)
-        return comments
+        return Comment.objects.filter(title=title, review=review)
 
     def perform_create(self, serializer):
         title = get_object_or_404(Title, pk=self.kwargs.get('title_id'))
