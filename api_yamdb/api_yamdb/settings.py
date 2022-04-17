@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'reviews.apps.ReviewsConfig',
     'django_filters',
     'djoser',
+    'drf_yasg',
+    'debug_toolbar',
 ]
 
 
