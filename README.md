@@ -78,3 +78,7 @@ infra/.env.template
 
 ### Автор:
 Семенюк Александр [belinskii1](https://github.com/Belinskii1)
+
+### Ознакомитсья с проектом:
+http://51.250.101.50/redoc/  
+http://51.250.101.50/api/v1/  
