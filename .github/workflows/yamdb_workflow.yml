@@ -1,4 +1,4 @@
-name: Django-app workflow
+name: yamdb workflow
 
 on: [push]
 
@@ -47,7 +47,8 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: belinskii1/infra_actions:latest
+          context: ./api_yamdb/
+          tags: belinskii1/yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -81,4 +82,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: ${{ github.workflow }} успешно выполнен! 
+        message: ${{ github.workflow }} успешно выполнен!
