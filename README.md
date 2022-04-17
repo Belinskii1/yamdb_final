@@ -78,4 +78,3 @@ infra/.env.template
 
 ### Автор:
 Семенюк Александр [belinskii1](https://github.com/Belinskii1)
-
