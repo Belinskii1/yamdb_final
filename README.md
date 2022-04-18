@@ -80,5 +80,5 @@ infra/.env.template
 Семенюк Александр [belinskii1](https://github.com/Belinskii1)
 
 ### Примеры запросов:
-http://51.250.101.50/api/v1/
-http://51.250.101.50/admin/
+http://51.250.82.176/redoc/
+http://51.250.82.176/admin/
