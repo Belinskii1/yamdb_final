@@ -20,6 +20,7 @@ from django.urls import include, path, re_path
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework import permissions
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -53,3 +54,5 @@ if settings.DEBUG:
         settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
     )
     urlpatterns += (path('__debug__/', include(debug_toolbar.urls)),)
+
+urlpatterns += staticfiles_urlpatterns()
